@@ -3,7 +3,7 @@
 - [x] Conversation history (interactive communication with model)
 - [ ] Authentication and authorization
 - [ ] User accounts
-- [ ] Multiple conversations
+- [ ] Multiple chats
 
 ### How to use:
 1. Install [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/get-npm) (Node.js version 18.18.0 and npm version 10.3.0 or higher are recommended).
