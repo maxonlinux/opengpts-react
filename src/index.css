@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+}
+
+#root {
+  @apply fixed flex flex-col h-full w-full;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  @apply bg-clip-padding;
+}
+
+pre {
+  @apply relative p-4 pt-12 border border-dark-700/10 rounded-lg bg-black text-white overflow-x-auto my-4;
+}
+
+pre::before {
+  content: "Code";
+  @apply block absolute left-0 top-0 w-full bg-light-100/10 px-2 py-2 text-xs text-light-300/50;
+}
+
+.hljs {
+  all: unset !important;
+}
+
+.ic {
+  font-family: "Material Symbols Rounded", sans-serif;
+  font-style: normal;
+  /* font-size: 24px; Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
