@@ -1,6 +1,9 @@
 ### ⚠️ DISCONTINUED due to broken AI provider
 Interaction with the service provider's endpoints has been discontinued due to additional security measures that restrict interaction not originating from their domain.
 
+## OpenGPTs-React
+A frontend part of the OpenGPTs "wrapper" that allows you to send prompts and receive responses from the AI in real-time (works together with OpenGPTs-Express proxy).
+
 ### To Do:
 
 - [x] Basic interface with prompt field
